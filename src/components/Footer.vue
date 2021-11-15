@@ -1,17 +1,17 @@
 <template>
     <div class="footer">
         <div class="div1">
-            <div class="advertising" v-on:click="about" >Advertising</div>
-            <div class="business" v-on:click="store">Business</div>
-            <div class="how" v-on:click="store">How Search works</div>
+            <div class="advertising">Advertising</div>
+            <div class="business">Business</div>
+            <div class="how">How Search works</div>
         </div>
         <div class="div2">
-            <div class="carbon" v-on:click="about" >Carbon neutral since 2007</div>
+            <div class="carbon">Carbon neutral since 2007</div>
         </div>
         <div class="div3">
-            <div class="privacy" v-on:click="about" >Privacy</div>
-            <div class="terms" v-on:click="store">Terms</div>
-            <div class="settings" v-on:click="store">Settings</div>
+            <div class="privacy">Privacy</div>
+            <div class="terms">Terms</div>
+            <div class="settings">Settings</div>
         </div>
     </div>
 </template>
@@ -22,21 +22,6 @@ export default {
 // setup() {
 // },
   methods: {
-    about() {
-      window.location.href = "";
-    },
-    store() {
-      window.location.href = "";
-    },
-    gmail() {
-      window.location.href = "";
-    },
-    images() {
-      window.location.href = "h";
-    },
-    user() {
-      window.location.href = "";
-    },
   },
 };
 
@@ -82,29 +67,57 @@ export default {
 .advertising {
     cursor: pointer;
     margin-left: 30px;
+    text-decoration: none;
+}
+.advertising:hover {
+    text-decoration: underline;
 }
 .business {
     cursor: pointer;
     margin-left: 30px;
+    text-decoration: none;
+}
+.business:hover {
+    text-decoration: underline;
 }
 .how {
     cursor: pointer;
     margin-left: 30px;
+    text-decoration: none;
+}
+.how:hover {
+    text-decoration: underline;
 }
 .carbon {
     cursor: pointer;
     margin-left: 20px;
+    text-decoration: none;
+}
+.carbon:hover {
+    text-decoration: underline;
 }
 .privacy {
     cursor: pointer;
     margin-right: 30px;
+    text-decoration: none;
+}
+.privacy:hover {
+    text-decoration: underline;
 }
 .terms {
     cursor: pointer;
     margin-right: 30px;
+    text-decoration: none;
+}
+.terms:hover {
+    text-decoration: underline;
 }
 .settings {
     cursor: pointer;
     margin-right: 30px;
+    text-decoration: none;
+}
+.settings:hover {
+    text-decoration: underline;
 }
 </style>

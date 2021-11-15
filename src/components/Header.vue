@@ -1,13 +1,13 @@
 <template>
     <div class="root-div">
         <div class="div2">
-            <div class="about" v-on:click="about">About</div>
-            <div class="store" v-on:click="store">Store</div>
+            <a class="about" href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a>
+            <a class="store" href="https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a>
         </div>
 
         <div class="div3">
-            <div class="gmail" v-on:click="gmail">Gmail</div>
-            <div class="images" v-on:click="images">Images</div>
+            <a class="gmail" href="">Gmail</a>
+            <a class="images" href="">Images</a>
             <img class="dots" src="https://cdn-icons-png.flaticon.com/512/17/17704.png" alt="">
             <img class="account" v-on:click="user" src="https://cdn-icons-png.flaticon.com/512/147/147144.png" alt="">
         </div>
@@ -20,21 +20,6 @@ export default {
 // setup() {
 // },
   methods: {
-    about() {
-      window.location.href = "https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header";
-    },
-    store() {
-      window.location.href = "https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US";
-    },
-    gmail() {
-      window.location.href = "https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%26ogbl%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
-    },
-    images() {
-      window.location.href = "https://www.google.com.br/imghp?hl=en&authuser=0&ogbl";
-    },
-    user() {
-      window.location.href = "https://accounts.google.com/signin/v2/identifier?hl=pt-BR&passive=true&continue=https%3A%2F%2Fwww.google.com.br%2F%3Fgws_rd%3Dssl&ec=GAZAmgQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
-    },
   },
 };
 
@@ -62,21 +47,41 @@ export default {
     margin-top: 22px;
     margin-left: 26px;
     cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+}
+.about:hover {
+    text-decoration: underline;
 }
 .store {
     margin-top: 22px;
     margin-left: 20px;
     cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+}
+.store:hover {
+    text-decoration: underline;
 }
 .gmail {
     margin-right: 15px;
     margin-top: 22.5px;
     cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+}
+.gmail:hover {
+    text-decoration: underline;
 }
 .images {
     margin-right: 31px;
     margin-top: 22.5px;
     cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+}
+.images:hover {
+    text-decoration: underline;
 }
 .dots {
     cursor: pointer;

@@ -1,15 +1,12 @@
 <template>
 <div class="body">
   <div>
-    <input type="text" class="search"
-    v-bind:style="{boxShadow:bgColor}" @mouseout="hoverOut()" @mouseover="hoverIn()">
+    <input type="text" class="search">
     <img alt="Mic" class="mic" src="../assets/Mic.png">
   </div>
   <div class="div2">
-    <button class="button" v-bind:style="{boxShadow:bgColor2}"
-    @mouseout="hoverOut2()" @mouseover="hoverIn2()">Google Search</button>
-    <button class="button" v-bind:style="{boxShadow:bgColor3}"
-    @mouseout="hoverOut3()" @mouseover="hoverIn3()">I'm Feeling Lucky</button>
+    <button class="button">Google Search</button>
+    <button class="button">I'm Feeling Lucky</button>
   </div>
   <div class="div3">
     <span class="span1">Google offered in:</span>
@@ -26,30 +23,9 @@ export default {
   },
   data() {
     return {
-      bgColor: "",
-      bgColor2: "",
-      bgColor3: "",
     };
   },
   methods: {
-    hoverIn() {
-      this.bgColor = "0px 0px 3px 0px #c5c5c5";
-    },
-    hoverOut() {
-      this.bgColor = "none";
-    },
-    hoverIn2() {
-      this.bgColor2 = "0px 0px 1px 0px";
-    },
-    hoverOut2() {
-      this.bgColor2 = "none";
-    },
-    hoverIn3() {
-      this.bgColor3 = "0px 0px 1px 0px";
-    },
-    hoverOut3() {
-      this.bgColor3 = "none";
-    },
   },
 };
 </script>
@@ -101,6 +77,9 @@ export default {
   background-position: 1.9% 48%;
   background-size: 27px;
 }
+.search:hover {
+    box-shadow: 0px 0px 3px 0px #c5c5c5;
+}
 .mic {
   width: 14px;
   height: 20px;
@@ -123,6 +102,9 @@ export default {
   cursor: pointer;
   margin-top: 30px;
 }
+.button:hover {
+    box-shadow: 0px 0px 1px 0px;
+}
 .span1 {
   font-family: sans-serif;
   font-size: 13px;
@@ -134,5 +116,9 @@ export default {
   cursor: pointer;
   color: rgb(0, 0, 248);
   margin-right: 3.2px;
+  text-decoration: none;
+}
+.span2:hover {
+    text-decoration: underline;
 }
 </style>
