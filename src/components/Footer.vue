@@ -1,17 +1,17 @@
 <template>
     <div class="footer">
         <div class="div1">
-            <div class="advertising">Advertising</div>
-            <div class="business">Business</div>
-            <div class="how">How Search works</div>
+            <a class="advertising" href="https://ads.google.com/intl/pt-BR_br/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+            <a class="business" href="https://smallbusiness.withgoogle.com/intl/pt-BR_br/help/#!/">Business</a>
+            <a class="how" href="https://www.google.com/search/howsearchworks/?fg=1">How Search works</a>
         </div>
         <div class="div2">
-            <div class="carbon">Carbon neutral since 2007</div>
+            <a class="carbon" href="https://sustainability.google/commitments/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content=">Carbon neutral since 2007</a>
         </div>
         <div class="div3">
-            <div class="privacy">Privacy</div>
-            <div class="terms">Terms</div>
-            <div class="settings">Settings</div>
+            <a class="privacy" href="https://policies.google.com/privacy?hl=en&fg=1">Privacy</a>
+            <a class="terms" href="https://policies.google.com/terms?hl=en&fg=1">Terms</a>
+            <a class="settings" href="">Settings</a>
         </div>
     </div>
 </template>
@@ -67,6 +67,7 @@ export default {
 .advertising {
     cursor: pointer;
     margin-left: 30px;
+    color: black;
     text-decoration: none;
 }
 .advertising:hover {
@@ -74,6 +75,7 @@ export default {
 }
 .business {
     cursor: pointer;
+    color: black;
     margin-left: 30px;
     text-decoration: none;
 }
@@ -83,6 +85,7 @@ export default {
 .how {
     cursor: pointer;
     margin-left: 30px;
+    color: black;
     text-decoration: none;
 }
 .how:hover {
@@ -91,6 +94,7 @@ export default {
 .carbon {
     cursor: pointer;
     margin-left: 20px;
+    color: black;
     text-decoration: none;
 }
 .carbon:hover {
@@ -99,6 +103,7 @@ export default {
 .privacy {
     cursor: pointer;
     margin-right: 30px;
+    color: black;
     text-decoration: none;
 }
 .privacy:hover {
@@ -107,6 +112,7 @@ export default {
 .terms {
     cursor: pointer;
     margin-right: 30px;
+    color: black;
     text-decoration: none;
 }
 .terms:hover {
@@ -115,6 +121,7 @@ export default {
 .settings {
     cursor: pointer;
     margin-right: 30px;
+    color: black;
     text-decoration: none;
 }
 .settings:hover {

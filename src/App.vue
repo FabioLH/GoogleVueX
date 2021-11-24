@@ -16,11 +16,10 @@ import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 
 export default {
-  components: { Header, Footer },
-
-  // setup() {
-  // console.log("App.vue setup");
-// },
+  components: {
+    Header,
+    Footer,
+  },
 };
 </script>
 
