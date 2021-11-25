@@ -31,7 +31,7 @@ export default {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0);
     z-index: 99;
     display: flex;
     justify-content: flex-end;
@@ -39,7 +39,7 @@ export default {
 }
 .modal {
     position: relative;
-    bottom: 50px;
+    bottom: 49px;
     right: 20px;
     width: 200px;
     height: 290px;

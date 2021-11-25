@@ -11,7 +11,7 @@
         <div class="div3">
             <a class="privacy" href="https://policies.google.com/privacy?hl=en&fg=1">Privacy</a>
             <a class="terms" href="https://policies.google.com/terms?hl=en&fg=1">Terms</a>
-            <spam class="settings" @click="showModal = true">Settings</spam>
+            <div class="settings" @click="showModal = true">Settings</div>
         </div>
         <Modal v-if="showModal" @click="showModal = false"/>
     </div>
