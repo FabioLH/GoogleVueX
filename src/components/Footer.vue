@@ -11,17 +11,23 @@
         <div class="div3">
             <a class="privacy" href="https://policies.google.com/privacy?hl=en&fg=1">Privacy</a>
             <a class="terms" href="https://policies.google.com/terms?hl=en&fg=1">Terms</a>
-            <a class="settings" href="">Settings</a>
+            <spam class="settings" @click="showModal = true">Settings</spam>
         </div>
+        <Modal v-if="showModal" @click="showModal = false"/>
     </div>
 </template>
 
 <script>
+import Modal from "./Modal.vue";
 
 export default {
-// setup() {
-// },
-  methods: {
+  components: {
+    Modal,
+  },
+  data() {
+    return {
+      showModal: false,
+    };
   },
 };
 
@@ -34,6 +40,7 @@ export default {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: relative;
 }
 .div1 {
     display: flex;

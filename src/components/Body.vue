@@ -39,6 +39,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 .div2 {
   border: 0px solid black;
